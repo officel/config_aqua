@@ -41,3 +41,4 @@ packages:
 - name: helm/helm@v3.15.0
 - name: ahmetb/kubectx@v0.9.5
 - name: ahmetb/kubectx/kubens@v0.9.5
+- name: derailed/k9s@v0.32.4
