@@ -42,3 +42,6 @@ packages:
 - name: ahmetb/kubectx@v0.9.5
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: derailed/k9s@v0.32.4
+- name: ahmetb/kubectl-tree@v0.4.3
+- name: kubecolor/kubecolor@v0.3.2
+- name: stern/stern@v1.29.0
