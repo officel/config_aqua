@@ -22,3 +22,8 @@ alias aqia='aqua install --all'
 alias aqli='aqua list --installed --all | sort'
 alias aqup='aqua update'
 ```
+
+## direnv
+
+- .direnv と .env で github token を設定した
+- [Tips｜aqua CLI Version Manager 入門](https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/tips#github_token%2C-aqua_github_token-%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%97%E3%81%A6-rate-limit-%E3%82%92%E5%9B%9E%E9%81%BF%E3%81%99%E3%82%8B)
