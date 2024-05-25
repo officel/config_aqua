@@ -12,3 +12,13 @@
 export AQUA_GLOBAL_CONFIG="$HOME/.config/aqua/aqua.yaml"
 export PATH="$(aqua root-dir)/bin:$PATH"
 ```
+
+## alias
+
+```bash
+alias aq='aqua'
+alias aqgi='aqua generate -i -o $AQUA_GLOBAL_CONFIG'
+alias aqia='aqua install --all'
+alias aqli='aqua list --installed --all | sort'
+alias aqup='aqua update'
+```
