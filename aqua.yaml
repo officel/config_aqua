@@ -23,7 +23,7 @@ packages:
 - name: mikefarah/yq@v4.44.1
 - name: google/yamlfmt@v0.12.1
 - name: direnv/direnv@v2.34.0
-- name: stateful/runme@v3.3.1
+- name: stateful/runme@v3.3.2
 - name: aws/aws-cli@2.15.58
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v1.5.1
