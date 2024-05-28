@@ -45,3 +45,5 @@ packages:
 - name: ahmetb/kubectl-tree@v0.4.3
 - name: kubecolor/kubecolor@v0.3.3
 - name: stern/stern@v1.30.0
+- name: argoproj/argo-cd@v2.11.2
+- name: istio/istio/istioctl@1.22.0
