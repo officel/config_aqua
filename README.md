@@ -17,6 +17,7 @@ export PATH="$(aqua root-dir)/bin:$PATH"
 
 ```bash
 alias aq='aqua'
+alias aqcd="cd ${XDG_CONFIG_HOME:-$HOME/.config}/aqua/"
 alias aqgi='aqua generate -i -o $AQUA_GLOBAL_CONFIG'
 alias aqia='aqua install --all'
 alias aqli='aqua list --installed --all | sort'
