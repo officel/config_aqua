@@ -8,7 +8,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.187.1 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.188.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: cli/cli@v2.50.0
   desc: GitHub CLI
@@ -17,14 +17,14 @@ packages:
 - name: astral-sh/rye@0.34.0
   desc: Python Version Manager
 - name: golang/go@go1.22.3
-- name: nektos/act@v0.2.62
+- name: nektos/act@v0.2.63
   desc: GitHub Actions Localy
 - name: jqlang/jq@jq-1.7.1
 - name: mikefarah/yq@v4.44.1
 - name: google/yamlfmt@v0.12.1
 - name: direnv/direnv@v2.34.0
 - name: stateful/runme@v3.3.2
-- name: aws/aws-cli@2.15.59
+- name: aws/aws-cli@2.15.62
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v1.5.1
 - name: kayac/ecspresso@v2.3.3
@@ -32,7 +32,7 @@ packages:
 - name: tfutils/tfenv@v3.0.0
 - name: terraform-linters/tflint@v0.51.1
 - name: hashicorp/levant@v0.3.3
-- name: hashicorp/packer@v1.10.3
+- name: hashicorp/packer@v1.11.0
 - name: kubernetes/kubectl@v1.30.1
 - name: kubernetes/kubeadm@v1.30.1
 - name: kubernetes-sigs/kind@v0.23.0
