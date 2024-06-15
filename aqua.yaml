@@ -24,7 +24,7 @@ packages:
 - name: google/yamlfmt@v0.12.1
 - name: direnv/direnv@v2.34.0
 - name: stateful/runme@v3.3.4
-- name: aws/aws-cli@2.16.8
+- name: aws/aws-cli@2.16.9
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v1.5.1
 - name: kayac/ecspresso@v2.3.3
@@ -41,7 +41,7 @@ packages:
 - name: helm/helm@v3.15.2
 - name: ahmetb/kubectx@v0.9.5
 - name: ahmetb/kubectx/kubens@v0.9.5
-- name: derailed/k9s@v0.32.4
+- name: derailed/k9s@v0.32.5
 - name: ahmetb/kubectl-tree@v0.4.3
 - name: kubecolor/kubecolor@v0.3.3
 - name: stern/stern@v1.30.0
