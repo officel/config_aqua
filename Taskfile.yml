@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+# https://taskfile.dev/
+
+version: '3'
+
+vars:
+  # 一連の処理のエラーを補足
+  on_error: /tmp/on_error
+  # 自動処理用のコミットタイトル
+  title:
+    sh: echo "bump:" "aqua up at $(date -I)"
+  # 自動処理用のブランチ名
+  head_branch:
+    sh: echo "bump/aqua_up/$(date -I)"
+
+tasks:
+  default:
+    cmd: task --list
+    silent: true
+
+  aqua-update:
+    desc: Run aqua update, install, list for globally
+    aliases:
+      - a
+    dir: ~/.config/aqua
+    dotenv:
+      - .env
+    cmds:
+      - echo "use github token [${GITHUB_TOKEN:0:20}***]"
+      - aqua update
+      - aqua install -all
+      - aqua list --installed --all | sort
+
+  commit:
+    desc: git add, commit, and push for aqua.yaml
+    summary: aqua update 後に自動でコミットしてPRしてマージさせる
+    aliases:
+      - c
+    preconditions:
+      - touch {{.on_error}}
+    cmds:
+      - defer: {task: git_on_error}
+      - git fetch --prune --all
+      - git checkout origin/HEAD
+      - git add aqua.yaml
+      - git commit -m"{{.title}}"
+      - git push origin HEAD:refs/heads/{{.head_branch}} -f
+      - task: pr
+      - task: git_status
+      - rm -fr {{.on_error}}
+
+  pr:
+    desc: gh pr
+    summary: |
+      PR してオートマージを設定する。
+      push と分離しているのは、エラー時の処理が違うため。
+      push 前までのエラーは reset して処理前に戻すが、
+      push 後のエラーは push を再処理するため。
+      PAT の権限がちゃんとしてないとエラーになる（なった）
+    cmds:
+      - gh pr create -t "{{.title}}" -b "" -l "" -H "{{.head_branch}}" -B "main"
+      - gh pr merge "{{.head_branch}}" --auto -s
+
+  git_status:
+    internal: true
+    silent: true
+    cmds:
+      - git plog -5
+        # see https://github.com/officel/config_git/blob/main/config#L21
+      - git status --short --branch
+
+  git_on_error:
+    internal: true
+    silent: true
+    status:
+      - test ! -e {{.on_error}}
+        # エラーファイルが存在したら処理する
+    cmds:
+      - defer: rm -fr {{.on_error}}
+      - cmd: git reset --mixed origin/HEAD
+        ignore_error: true
+      - task: git_status
