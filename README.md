@@ -19,9 +19,21 @@ alias aqgi='aqua generate -i -o $AQUA_GLOBAL_CONFIG'
 alias aqia='aqua install --all'
 alias aqli='aqua list --installed --all | sort'
 alias aqup='aqua update'
+```
 
-# global 配置の aqua を global 配置の task で一発アップデート
-alias taskga='task -g a'
+## task
+
+```bash
+$ aqcd
+aqua $ task
+task: Available tasks for this project:
+* aqua-update:       Run aqua update, install, list for globally      (aliases: a)
+* commit:            git add, commit, and push for aqua.yaml          (aliases: c)
+* pr:                gh pr
+aqua $ task a
+<omit> aqua up が実行される
+aqua $ task c
+<omit> git add aqua.yaml から commit, push, gh pr create, gh pr merge まで自動化
 ```
 
 ## direnv
