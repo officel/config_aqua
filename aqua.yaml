@@ -8,23 +8,23 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.196.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.197.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: cli/cli@v2.51.0
+- name: cli/cli@v2.52.0
   desc: GitHub CLI
 - name: volta-cli/volta@v1.1.1
   desc: JavaScirpt Version Manager
-- name: astral-sh/rye@0.34.0
+- name: astral-sh/rye@0.35.0
   desc: Python Version Manager
 - name: golang/go@go1.22.4
 - name: nektos/act@v0.2.63
   desc: GitHub Actions Localy
 - name: jqlang/jq@jq-1.7.1
 - name: mikefarah/yq@v4.44.2
-- name: google/yamlfmt@v0.12.1
+- name: google/yamlfmt@v0.13.0
 - name: direnv/direnv@v2.34.0
-- name: stateful/runme@v3.3.4
-- name: aws/aws-cli@2.17.0
+- name: stateful/runme@v3.3.5
+- name: aws/aws-cli@2.17.3
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v1.5.1
 - name: kayac/ecspresso@v2.3.5
