@@ -8,7 +8,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.197.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.200.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: cli/cli@v2.52.0
   desc: GitHub CLI
@@ -17,20 +17,20 @@ packages:
 - name: astral-sh/rye@0.35.0
   desc: Python Version Manager
 - name: golang/go@go1.22.4
-- name: nektos/act@v0.2.63
+- name: nektos/act@v0.2.64
   desc: GitHub Actions Localy
 - name: jqlang/jq@jq-1.7.1
 - name: mikefarah/yq@v4.44.2
 - name: google/yamlfmt@v0.13.0
 - name: direnv/direnv@v2.34.0
 - name: stateful/runme@v3.3.5
-- name: aws/aws-cli@2.17.3
+- name: aws/aws-cli@2.17.5
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v1.5.1
 - name: kayac/ecspresso@v2.3.5
 - name: ericchiang/pup@v0.4.0
 - name: tfutils/tfenv@v3.0.0
-- name: terraform-linters/tflint@v0.51.1
+- name: terraform-linters/tflint@v0.51.2
 - name: hashicorp/levant@v0.3.3
 - name: hashicorp/packer@v1.11.0
 - name: kubernetes/kubectl@v1.30.2
@@ -46,5 +46,5 @@ packages:
 - name: kubecolor/kubecolor@v0.3.3
 - name: stern/stern@v1.30.0
 - name: argoproj/argo-cd@v2.11.3
-- name: istio/istio/istioctl@1.22.1
-- name: go-task/task@v3.37.2
+- name: istio/istio/istioctl@1.22.2
+- name: go-task/task@v3.38.0
