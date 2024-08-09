@@ -27,18 +27,30 @@ alias aqup='aqua update'
 $ aqcd
 aqua $ task
 task: Available tasks for this project:
-* aqua-update:       Run aqua update, install, list for globally      (aliases: a)
-* commit:            git add, commit, and push for aqua.yaml          (aliases: c)
-* pr:                gh pr
-aqua $ task a
+* aqua:git:          auto git, use -- COMMIT TITLE                    (aliases: ag)
+* aqua:update:       Run aqua update, install, list for globally      (aliases: au)
+
+aqua $ task ls
+task: Available tasks for this project:
+* _git:
+* _git:auto:
+* _git:gh:
+* aqua:git:           auto git, use -- COMMIT TITLE                    (aliases: ag)
+* aqua:update:        Run aqua update, install, list for globally      (aliases: au)
+* default:
+* util:list:                (aliases: ul, ls)
+* util:summary:             (aliases: us, la)
+
+aqua $ task au
 <omit> aqua up が実行される
-aqua $ task c
+
+aqua $ task ag
 <omit> git add aqua.yaml から commit, push, gh pr create, gh pr merge まで自動化
 ```
 
 ## direnv
 
-- .direnv と .env で github token を設定した
+- .direnv と .env で GitHub token を設定した
 - [Tips｜aqua CLI Version Manager 入門](https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/tips#github_token%2C-aqua_github_token-%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%97%E3%81%A6-rate-limit-%E3%82%92%E5%9B%9E%E9%81%BF%E3%81%99%E3%82%8B)
 
 # related my projects
