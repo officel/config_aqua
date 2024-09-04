@@ -17,14 +17,14 @@ packages:
 - name: astral-sh/rye@0.39.0
   desc: Python Version Manager
 - name: golang/go@go1.23.0
-- name: nektos/act@v0.2.65
+- name: nektos/act@v0.2.66
   desc: GitHub Actions Localy
 - name: jqlang/jq@jq-1.7.1
 - name: mikefarah/yq@v4.44.3
 - name: google/yamlfmt@v0.13.0
 - name: direnv/direnv@v2.34.0
 - name: stateful/runme@v3.7.0
-- name: aws/aws-cli@2.17.41
+- name: aws/aws-cli@2.17.43
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.0.0
 - name: kayac/ecspresso@v2.4.1
