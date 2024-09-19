@@ -24,7 +24,7 @@ packages:
 - name: google/yamlfmt@v0.13.0
 - name: direnv/direnv@v2.34.0
 - name: stateful/runme@v3.7.1
-- name: aws/aws-cli@2.17.53
+- name: aws/aws-cli@2.17.54
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.0.0
 - name: kayac/ecspresso@v2.4.1
@@ -47,5 +47,5 @@ packages:
 - name: stern/stern@v1.30.0
 - name: argoproj/argo-cd@v2.12.3
 - name: istio/istio/istioctl@1.23.1
-- name: go-task/task@v3.39.0
-- name: newrelic/newrelic-cli@v0.93.7
+- name: go-task/task@v3.39.1
+- name: newrelic/newrelic-cli@v0.93.8
