@@ -47,5 +47,5 @@ packages:
 - name: stern/stern@v1.30.0
 - name: argoproj/argo-cd@v2.12.3
 - name: istio/istio/istioctl@1.23.1
-- name: go-task/task@v3.39.1
+- name: go-task/task@v3.39.2
 - name: newrelic/newrelic-cli@v0.93.8
