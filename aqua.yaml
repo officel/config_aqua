@@ -47,3 +47,4 @@ packages:
 - name: istio/istio/istioctl@1.23.2
 - name: go-task/task@v3.39.2
 - name: newrelic/newrelic-cli@v0.95.0
+- name: astral-sh/uv@0.4.18
