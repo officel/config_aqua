@@ -3,6 +3,12 @@
 
 version: '3'
 
+vars:
+  # 一連の処理のエラーを捕捉（_gitで使用する）
+  # 以前は defer で task に vars が渡せていたが、v3.39.0 あたりでエラーになって以降
+  # 修正されておらず、グローバルに切り出して対応することにした
+  ON_ERROR: /tmp/on_error_aqua
+
 tasks:
   default:
     cmd: task --list --sort alphanumeric
@@ -56,8 +62,6 @@ tasks:
           BRANCH:
             sh: echo "bump/aqua_up/$(date -I)"
           TARGET: "aqua.yaml"
-          # 一連の処理のエラーを捕捉
-          ON_ERROR: /tmp/on_error_aqua
 
   _git:
     summary: git automation
@@ -66,21 +70,18 @@ tasks:
         - TITLE
         - BRANCH
         - TARGET
-        - ON_ERROR
     cmds:
-      - defer: {task: _git:on_error, vars: {ON_ERROR: "{{.ON_ERROR}}"}}
+      - defer: {task: _git:on_error}
       - touch {{.ON_ERROR}}
       - task: _git:auto
         vars:
           TITLE: "{{.TITLE}}"
           BRANCH: "{{.BRANCH}}"
           TARGET: "{{.TARGET}}"
-          ON_ERROR: "{{.ON_ERROR}}"
       - task: _git:gh
         vars:
           TITLE: "{{.TITLE}}"
           BRANCH: "{{.BRANCH}}"
-          ON_ERROR: "{{.ON_ERROR}}"
       - task: _git:status
       - rm {{.ON_ERROR}}
 
@@ -120,9 +121,6 @@ tasks:
     status:
       - test ! -e {{.ON_ERROR}}
         # エラーファイルが存在したら処理する
-    requires:
-      vars:
-        - ON_ERROR
     cmds:
       - defer: rm {{.ON_ERROR}}
       - cmd: git reset --mixed origin/HEAD
