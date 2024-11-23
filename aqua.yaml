@@ -8,7 +8,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.254.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.258.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: cli/cli@v2.62.0
   desc: GitHub CLI
@@ -21,25 +21,25 @@ packages:
 - name: mikefarah/yq@v4.44.5
 - name: google/yamlfmt@v0.14.0
 - name: direnv/direnv@v2.35.0
-- name: stateful/runme@v3.9.3
-- name: aws/aws-cli@2.22.0
+- name: stateful/runme@v3.9.4
+- name: aws/aws-cli@2.22.4
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.0.0
-- name: kayac/ecspresso@v2.4.3
+- name: kayac/ecspresso@v2.4.4
 - name: ericchiang/pup@v0.4.0
 - name: tfutils/tfenv@v3.0.0
 - name: terraform-linters/tflint@v0.54.0
 - name: hashicorp/levant@v0.3.3
 - name: hashicorp/packer@v1.11.2
-- name: kubernetes/kubectl@v1.31.2
-- name: kubernetes/kubeadm@v1.31.2
+- name: kubernetes/kubectl@v1.31.3
+- name: kubernetes/kubeadm@v1.31.3
 - name: kubernetes-sigs/kind@v0.25.0
 - name: helm/helm@v3.16.3
 - name: derailed/k9s@v0.32.7
 - name: kubecolor/kubecolor@v0.4.0
-- name: argoproj/argo-cd@v2.13.0
+- name: argoproj/argo-cd@v2.13.1
 - name: istio/istio/istioctl@1.24.0
 - name: go-task/task@v3.40.0
 - name: newrelic/newrelic-cli@v0.97.1
-- name: astral-sh/uv@0.5.2
+- name: astral-sh/uv@0.5.4
 - name: neilotoole/sq@v0.48.3
