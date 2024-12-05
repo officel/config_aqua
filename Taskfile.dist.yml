@@ -34,6 +34,23 @@ tasks:
     cmd: task --list-all --sort alphanumeric -j | jq -cr ".tasks[].name" | xargs -i sh -c 'task --summary {}; echo "\n---\n"'
     silent: true
 
+  aqua:alias:
+    desc: show alias for aqua
+    summary: |
+      aqua のエイリアスを表示
+      profile を引き継がないので alias コマンドから grep では表示できないのでベタ書き
+    aliases:
+      - aa
+    cmds:
+      - |
+        cat <<EOF
+        alias aqgi='aqua generate -i -o $AQUA_GLOBAL_CONFIG'
+        alias aqia='aqua install --all'
+        alias aqli='aqua list --installed --all | sort'
+        alias aqup='aqua update'
+        EOF
+    silent: true
+
   aqua:update:
     desc: Run aqua update, install, list for globally
     aliases:
