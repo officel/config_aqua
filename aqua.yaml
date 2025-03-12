@@ -8,24 +8,24 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.322.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.326.1 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: cli/cli@v2.67.0
+- name: cli/cli@v2.68.1
   desc: GitHub CLI
 - name: volta-cli/volta@v2.0.2
   desc: JavaScirpt Version Manager
-- name: golang/go@go1.24.0
-- name: nektos/act@v0.2.74
+- name: golang/go@go1.24.1
+- name: nektos/act@v0.2.75
   desc: GitHub Actions Localy
 - name: jqlang/jq@jq-1.7.1
 - name: mikefarah/yq@v4.45.1
 - name: google/yamlfmt@v0.16.0
 - name: direnv/direnv@v2.35.0
-- name: stateful/runme@v3.12.4
-- name: aws/aws-cli@2.24.15
+- name: stateful/runme@v3.12.5
+- name: aws/aws-cli@2.24.22
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.1.0
-- name: kayac/ecspresso@v2.4.5
+- name: kayac/ecspresso@v2.4.6
 - name: ericchiang/pup@v0.4.0
 - name: tfutils/tfenv@v3.0.0
 - name: terraform-linters/tflint@v0.55.1
@@ -35,13 +35,13 @@ packages:
 - name: kubernetes/kubeadm@v1.32.2
 - name: kubernetes-sigs/kind@v0.27.0
 - name: helm/helm@v3.17.1
-- name: derailed/k9s@v0.40.5
+- name: derailed/k9s@v0.40.8
 - name: kubecolor/kubecolor@v0.5.0
-- name: argoproj/argo-cd@v2.14.3
-- name: istio/istio/istioctl@1.24.3
-- name: go-task/task@v3.41.0
-- name: newrelic/newrelic-cli@v0.97.7
-- name: astral-sh/uv@0.6.3
+- name: argoproj/argo-cd@v2.14.5
+- name: istio/istio/istioctl@1.25.0
+- name: go-task/task@v3.42.1
+- name: newrelic/newrelic-cli@v0.97.9
+- name: astral-sh/uv@0.6.6
 - name: neilotoole/sq@v0.48.5
 - name: terraform-docs/terraform-docs@v0.19.0
 - name: marp-team/marp-cli@v4.1.2
