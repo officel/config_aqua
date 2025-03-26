@@ -46,3 +46,4 @@ packages:
 - name: terraform-docs/terraform-docs@v0.19.0
 - name: marp-team/marp-cli@v4.1.2
 - name: 01mf02/jaq@v2.1.1
+- name: Azure/kubelogin@v0.2.7
