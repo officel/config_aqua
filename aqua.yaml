@@ -19,7 +19,7 @@ packages:
 - name: google/yamlfmt@v0.16.0
 - name: direnv/direnv@v2.36.0
 - name: stateful/runme@v3.13.2
-- name: aws/aws-cli@2.27.15
+- name: aws/aws-cli@2.27.17
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.1.0
 - name: kayac/ecspresso@v2.5.0
@@ -30,7 +30,7 @@ packages:
 - name: hashicorp/packer@v1.12.0
 - name: kubernetes/kubectl@v1.33.1
 - name: kubernetes/kubeadm@v1.33.1
-- name: kubernetes-sigs/kind@v0.27.0
+- name: kubernetes-sigs/kind@v0.28.0
 - name: helm/helm@v3.17.3
 - name: derailed/k9s@v0.50.6
 - name: kubecolor/kubecolor@v0.5.1
@@ -38,7 +38,7 @@ packages:
 - name: istio/istio/istioctl@1.26.0
 - name: go-task/task@v3.43.3
 - name: newrelic/newrelic-cli@v0.98.2
-- name: astral-sh/uv@0.7.4
+- name: astral-sh/uv@0.7.5
 - name: neilotoole/sq@v0.48.5
 - name: terraform-docs/terraform-docs@v0.20.0
 - name: marp-team/marp-cli@v4.1.2
