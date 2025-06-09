@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://taskfile.dev/schema.json
 # https://taskfile.dev/
 
-version: '3'
+version: "3"
 
 vars:
   # 一連の処理のエラーを捕捉（_gitで使用する）
@@ -88,7 +88,7 @@ tasks:
         - BRANCH
         - TARGET
     cmds:
-      - defer: {task: _git:on_error}
+      - defer: { task: _git:on_error }
       - touch {{.ON_ERROR}}
       - task: _git:auto
         vars:
@@ -122,6 +122,7 @@ tasks:
       - オートマージの設定もリポジトリ側に必要
     cmds:
       - gh pr create -t "{{.TITLE}}" -b "" -l "" -H "{{.BRANCH}}" -B "main"
+      - sleep 1
       - gh pr merge "{{.BRANCH}}" --auto -s
 
   _git:status:
