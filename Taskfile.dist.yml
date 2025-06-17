@@ -11,7 +11,8 @@ vars:
 
 tasks:
   default:
-    cmd: task --list --sort alphanumeric
+    cmds:
+      - task --list --sort alphanumeric -t {{.TASKFILE}}
     silent: true
 
   util:list:
@@ -74,10 +75,8 @@ tasks:
     cmds:
       - task: _git
         vars:
-          TITLE:
-            sh: echo "bump:" "aqua up at $(date -I) {{.CLI_ARGS}}"
-          BRANCH:
-            sh: echo "bump/aqua_up/$(date -I)"
+          TITLE: 'bump: aqua up at {{date "2006-01-02" now}} {{.CLI_ARGS}}'
+          BRANCH: 'bump/aqua_up/{{date "2006-01-02" now}}'
           TARGET: "aqua.yaml"
 
   _git:
