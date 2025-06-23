@@ -18,8 +18,8 @@ packages:
 - name: mikefarah/yq@v4.45.4
 - name: google/yamlfmt@v0.17.1
 - name: direnv/direnv@v2.36.0
-- name: stateful/runme@v3.14.0
-- name: aws/aws-cli@2.27.40
+- name: stateful/runme@v3.14.1
+- name: aws/aws-cli@2.27.41
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.1.1
 - name: kayac/ecspresso@v2.5.0
@@ -38,7 +38,7 @@ packages:
 - name: istio/istio/istioctl@1.26.2
 - name: go-task/task@v3.44.0
 - name: newrelic/newrelic-cli@v0.99.0
-- name: astral-sh/uv@0.7.13
+- name: astral-sh/uv@0.7.14
 - name: neilotoole/sq@v0.48.5
 - name: terraform-docs/terraform-docs@v0.20.0
 - name: marp-team/marp-cli@v4.2.0
