@@ -44,3 +44,4 @@ packages:
 - name: marp-team/marp-cli@v4.2.0
 - name: 01mf02/jaq@v2.2.0
 - name: Azure/kubelogin@v0.2.9
+- name: anchore/grype@v0.95.0
