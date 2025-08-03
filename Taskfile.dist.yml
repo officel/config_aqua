@@ -13,6 +13,9 @@ tasks:
   default:
     cmds:
       - task --list --sort alphanumeric -t {{.TASKFILE}}
+      - echo ""
+      - echo -n "reminder this package "
+      - task: aqua:packages
     silent: true
 
   util:list:
@@ -50,6 +53,27 @@ tasks:
         alias aqli='aqua list --installed --all | sort'
         alias aqup='aqua update'
         EOF
+    silent: true
+
+  aqua:packages:
+    desc: random package from aqua.yaml
+    aliases:
+      - ap
+    vars:
+      AQUA_YAML_FILE:
+        sh: cat aqua.yaml
+        # yq を強要せずに aqua.yaml の内容を取得する
+      AQUA_YAML_DATA:
+        ref: fromYaml .AQUA_YAML_FILE
+        # YAML をパースしてデータを取得
+      AQUA_YAML_DATA_LENGTH:
+        ref: len .AQUA_YAML_DATA.packages
+        # パッケージの数を取得
+      RANDOM_PACKAGE:
+        ref: index .AQUA_YAML_DATA.packages (randInt 0 .AQUA_YAML_DATA_LENGTH)
+        # ランダムなパッケージを取得
+    cmds:
+      - echo "{{.RANDOM_PACKAGE.name}}"
     silent: true
 
   aqua:update:
