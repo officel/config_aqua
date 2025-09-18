@@ -64,3 +64,4 @@ aqua $ task ag
 - [officel/config_aqua: .config/aqua](https://github.com/officel/config_aqua)
 - [officel/config_bash: .config/bash](https://github.com/officel/config_bash)
 - [officel/config_git: .config/git](https://github.com/officel/config_git)
+- [officel/config_task: .config/task](https://github.com/officel/config_task)
