@@ -45,3 +45,4 @@ packages:
 - name: 01mf02/jaq@v2.3.0
 - name: Azure/kubelogin@v0.2.12
 - name: anchore/grype@v0.101.1
+- name: j178/prek@v0.2.10
