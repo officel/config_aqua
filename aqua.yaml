@@ -46,3 +46,4 @@ packages:
 - name: Azure/kubelogin@v0.2.12
 - name: anchore/grype@v0.101.1
 - name: j178/prek@v0.2.10
+- name: hairyhenderson/gomplate@v4.3.3
