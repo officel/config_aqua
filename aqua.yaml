@@ -8,7 +8,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.428.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.430.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: cli/cli@v2.82.1
 - name: volta-cli/volta@v2.0.2
@@ -19,7 +19,7 @@ packages:
 - name: google/yamlfmt@v0.20.0
 - name: direnv/direnv@v2.37.1
 - name: stateful/runme@v3.15.4
-- name: aws/aws-cli@2.31.19
+- name: aws/aws-cli@2.31.22
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.1.1
 - name: kayac/ecspresso@v2.6.1
@@ -37,13 +37,13 @@ packages:
 - name: argoproj/argo-cd@v3.1.9
 - name: istio/istio/istioctl@1.27.3
 - name: go-task/task@v3.45.4
-- name: newrelic/newrelic-cli@v0.105.0
+- name: newrelic/newrelic-cli@v0.106.0
 - name: astral-sh/uv@0.9.5
 - name: neilotoole/sq@v0.48.5
 - name: terraform-docs/terraform-docs@v0.20.0
 - name: marp-team/marp-cli@v4.2.3
 - name: 01mf02/jaq@v2.3.0
 - name: Azure/kubelogin@v0.2.12
-- name: anchore/grype@v0.101.1
-- name: j178/prek@v0.2.10
+- name: anchore/grype@v0.102.0
+- name: j178/prek@v0.2.11
 - name: hairyhenderson/gomplate@v4.3.3
