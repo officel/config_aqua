@@ -48,3 +48,4 @@ packages:
 - name: j178/prek@v0.2.13
 - name: hairyhenderson/gomplate@v4.3.3
 - name: hashicorp/vault@v1.21.0
+- name: aquasecurity/trivy@v0.67.2
