@@ -122,6 +122,7 @@ tasks:
         vars:
           TITLE: "{{.TITLE}}"
           BRANCH: "{{.BRANCH}}"
+      - git fetch --prune --all
       - task: _git:status
       - rm {{.ON_ERROR}}
 
@@ -147,10 +148,10 @@ tasks:
       - gh pr create -t "{{.TITLE}}" -b "" -l "" -H "{{.BRANCH}}" -B "main"
       - sleep 1
       - gh pr merge "{{.BRANCH}}" --auto -s
+      - sleep 2
 
   _git:status:
     internal: true
-    silent: true
     cmds:
       - git plog -5
         # see https://github.com/officel/config_git/blob/main/config#L21
