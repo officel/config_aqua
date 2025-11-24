@@ -51,3 +51,4 @@ packages:
 - name: aquasecurity/trivy@v0.67.2
 - name: miniscruff/changie@v1.23.0
 - name: twistedpair/google-cloud-sdk@548.0.0
+- name: ajeetdsouza/zoxide@v0.9.8
