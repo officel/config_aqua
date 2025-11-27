@@ -53,3 +53,4 @@ packages:
 - name: twistedpair/google-cloud-sdk@548.0.0
 - name: ajeetdsouza/zoxide@v0.9.8
 - name: junegunn/fzf@v0.67.0
+- name: Orange-OpenSource/hurl@7.1.0
