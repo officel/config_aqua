@@ -8,7 +8,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.446.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.448.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: cli/cli@v2.83.2
 - name: volta-cli/volta@v2.0.2
@@ -19,7 +19,7 @@ packages:
 - name: google/yamlfmt@v0.20.0
 - name: direnv/direnv@v2.37.1
 - name: stateful/runme@v3.16.4
-- name: aws/aws-cli@2.32.21
+- name: aws/aws-cli@2.32.24
 - name: 99designs/aws-vault@v7.2.0
 - name: charmbracelet/glow@v2.1.1
 - name: kayac/ecspresso@v2.7.0
@@ -34,9 +34,9 @@ packages:
 - name: helm/helm@v4.0.4
 - name: derailed/k9s@v0.50.16
 - name: kubecolor/kubecolor@v0.5.3
-- name: argoproj/argo-cd@v3.2.2
-- name: istio/istio/istioctl@1.28.1
-- name: go-task/task@v3.46.3
+- name: argoproj/argo-cd@v3.2.3
+- name: istio/istio/istioctl@1.28.2
+- name: go-task/task@v3.46.4
 - name: newrelic/newrelic-cli@v0.106.8
 - name: astral-sh/uv@0.9.18
 - name: neilotoole/sq@v0.48.5
@@ -44,8 +44,8 @@ packages:
 - name: marp-team/marp-cli@v4.2.3
 - name: 01mf02/jaq@v2.3.0
 - name: Azure/kubelogin@v0.2.13
-- name: anchore/grype@v0.104.2
-- name: j178/prek@v0.2.23
+- name: anchore/grype@v0.104.3
+- name: j178/prek@v0.2.25
 - name: hairyhenderson/gomplate@v4.3.3
 - name: hashicorp/vault@v1.21.1
 - name: aquasecurity/trivy@v0.68.2
