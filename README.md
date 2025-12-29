@@ -2,6 +2,16 @@
 
 - [CLI バージョン管理ツールの aqua を使うようになって少し経ったので少しまとめておく](https://zenn.dev/raki/articles/2024-05-16_aqua)
 
+## aqua.yaml のパッケージをソート
+
+```bash
+# yq も aqua でインストーつできるので入れておくといい
+yq '.packages |= sort_by(.name | split("/") | .[1])' aqua.yaml
+```
+
+- 管理に迷ったらソートしておくと見やすい（かも）
+- 関連ツール毎にまとめたい時は [Split the list of packages](https://aquaproj.github.io/docs/guides/split-config) を使うとよさげ
+
 ## .bashrc
 
 ```bash
