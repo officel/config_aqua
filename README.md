@@ -1,5 +1,8 @@
 # .config/aqua
 
+>[!IMPORTANT]
+> dotfiles の式年遷宮に伴い移動しました。[移動先はこちら](https://github.com/officel/dotfiles/)
+
 - [CLI バージョン管理ツールの aqua を使うようになって少し経ったので少しまとめておく](https://zenn.dev/raki/articles/2024-05-16_aqua)
 
 ## aqua.yaml のパッケージをソート
